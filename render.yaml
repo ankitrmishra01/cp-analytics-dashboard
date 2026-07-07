@@ -1,0 +1,16 @@
+services:
+  - type: web
+    name: cp-analytics-api
+    runtime: python
+    buildCommand: pip install -r requirements.txt
+    startCommand: uvicorn app.main:app --host 0.0.0.0 --port $PORT
+    rootDir: backend
+    envVars:
+      - key: DATABASE_URL
+        value: sqlite:///./cf_analytics.db
+      - key: CF_API_BASE
+        value: https://codeforces.com/api/
+      - key: CACHE_TTL_SECONDS
+        value: 3600
+      - key: CORS_ORIGINS
+        sync: false   # Set to your Vercel frontend URL in Render dashboard
