@@ -3,7 +3,8 @@
 > **Portfolio project** — A full-stack competitive programming analytics web app.
 > Analyzes your Codeforces history with charts, weak-topic identification, and NLP community sentiment.
 
-![Dashboard Screenshot](docs/screenshot.png)
+<img width="1830" height="910" alt="image" src="https://github.com/user-attachments/assets/99d99172-9423-4497-bbfa-d9c695580a45" />
+
 
 ---
 
